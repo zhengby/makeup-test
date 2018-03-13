@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>2017年美妆高考达人卷</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+     <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+     <script type="text/javascript">
+     	function autoPlayAudio1() {
+     	       wx.config({
+     	           // 配置信息, 即使不正确也能使用 wx.ready
+     	           debug: false,
+     	           appId: '',
+     	           timestamp: 1,
+     	           nonceStr: '',
+     	           signature: '',
+     	           jsApiList: []
+     	       });
+     	       wx.ready(function() {
+     	       		let media  = document.getElementById('mediaDom')
+     	           media.play();
+     	           document.addEventListener("WeixinJSBridgeReady", function () {
+     	                   media.play();
+     	           }, false);
+     	       });
+     	   }
+
+     	autoPlayAudio1()
+     </script>
+  </body>
+</html>
