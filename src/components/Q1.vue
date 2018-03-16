@@ -58,9 +58,8 @@
       想知道<span v-if="resultMessage.cuoti.length > 0">正确答案以及</span>更多美妆资讯？
     </p>
     <p class="result-p" style="font-size: 14px;">
-      快来扫二维码关注我们的公众号吧！
+      快来关注我们的公众号吧！
     </p>
-    <img src="../assets/qrcode.jpg" class="qrcode">
   </div>
 
   <div v-if="!showResult && questionIndex !== 0" class="pre" @click="pre">
@@ -68,7 +67,7 @@
 
   </div>
 
-  <span class="copyright">版权所有 微博@Sus十四十四</span>
+  <span class="copyright">版权所有 公众号xxx</span>
 
 </div>
 </template>
